@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_persona">PersonaActivity</string>
+    <string name="provincia_prompt">Choose a provincia</string>
+
+
+    <string-array name="provincia_arrays">
+        <item>Barcelona</item>
+        <item>Girona</item>
+        <item>Lleida</item>
+        <item>Tarragona</item>
+    </string-array>
+
+</resources>
