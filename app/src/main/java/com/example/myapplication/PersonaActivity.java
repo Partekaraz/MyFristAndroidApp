@@ -78,4 +78,15 @@ public class PersonaActivity extends AppCompatActivity {
        //         Toast.LENGTH_LONG).show();
     }
 
+    public void onClickSendEmail(View view) {
+        Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+
+        String aEmailList[] = {"tandaobien@gmail.com"};
+        emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);
+        emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,"aazor@covalco.es");
+        emailIntent.setType("plain/text");
+        emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Prueba de correo");
+        startActivity(emailIntent);
+    }
+
 }
